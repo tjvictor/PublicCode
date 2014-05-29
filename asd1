@@ -5,7 +5,8 @@ C_ID uniqueidentifier,
 T_ID uniqueidentifier,
 CreateTime datetime,
 Status smallint,
-UpdateTime datetime
+UpdateTime datetime,
+TaobaoLink nvarchar(max)
 )
 go
 create nonclustered index IX_tblSchedule_ID on tblSchedule(ID);
@@ -24,7 +25,8 @@ C_ID uniqueidentifier,
 T_ID uniqueidentifier,
 CreateTime datetime,
 Status smallint,
-UpdateTime datetime
+UpdateTime datetime,
+TaobaoLink nvarchar(max)
 )
 go
 create nonclustered index IX_tblUserScheduleLog_U_ID on tblUserScheduleLog(U_ID);
