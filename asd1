@@ -1,0 +1,34 @@
+create table tblSchedule
+(
+ID uniqueidentifier,
+C_ID uniqueidentifier,
+T_ID uniqueidentifier,
+CreateTime datetime,
+Status smallint,
+UpdateTime datetime
+)
+go
+create nonclustered index IX_tblSchedule_ID on tblSchedule(ID);
+go
+create nonclustered index IX_tblSchedule_C_ID on tblSchedule(C_ID);
+go
+create nonclustered index IX_tblSchedule_T_ID on tblSchedule(T_ID);
+go
+
+create table tblUserScheduleLog
+(
+ID uniqueidentifier,
+U_ID nvarchar(16),
+S_ID uniqueidentifier,
+C_ID uniqueidentifier,
+T_ID uniqueidentifier,
+CreateTime datetime,
+Status smallint,
+UpdateTime datetime
+)
+go
+create nonclustered index IX_tblUserScheduleLog_U_ID on tblUserScheduleLog(U_ID);
+go
+create clustered index IX_IX_tblUserScheduleLog_UpdateTime on tblUserScheduleLog(UpdateTime);
+go
+
