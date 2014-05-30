@@ -8,7 +8,8 @@ C_EndTime datetime,
 CreateTime datetime,
 Status smallint,
 UpdateTime datetime,
-TaobaoLink nvarchar(max)
+TaobaoLink nvarchar(max),
+TaobaoTradeNo nvarchar(64)
 )
 go
 create nonclustered index IX_tblSchedule_ID on tblSchedule(ID);
