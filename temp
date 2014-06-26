@@ -1,0 +1,164 @@
+//
+//  TJVictorViewController.m
+//  BabyLock
+//
+//  Created by Victor Guo on 14-6-12.
+//  Copyright (c) 2014年 Victor Guo. All rights reserved.
+//
+
+#import "TJVictorViewController.h"
+
+@interface TJVictorViewController ()
+
+@end
+
+@implementation TJVictorViewController
+@synthesize resultTableView;
+@synthesize showTxt;
+@synthesize segID;
+@synthesize labelT;
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    UIColor *color = [UIColor colorWithPatternImage:[UIImage imageNamed:@"fee_code_bg@2x.png"]];
+    
+    labelT.backgroundColor = color;
+	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    switch (indexPath.row) {
+        case 0:
+            return 64;
+        case 1:
+            return 64;
+        default:
+            return 44;
+    }
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 7;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString *TableSampleIdentifier = @"TableSampleIdentifier";
+    
+    UITableViewCell *cell = [[UITableViewCell alloc]
+                             initWithStyle:UITableViewCellStyleDefault
+                             reuseIdentifier:TableSampleIdentifier];
+    
+    UILabel *l1 = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 200, 20)];
+    l1.textColor = [UIColor colorWithRed:51.0/255 green:51.0/255 blue:51.0/255 alpha:1];
+    l1.font = [UIFont systemFontOfSize:16];
+    
+    UILabel *l2 = [[UILabel alloc] initWithFrame:CGRectMake(10, 22, 200, 20)];
+    l2.textColor = [UIColor colorWithRed:188.0/255 green:0 blue:45.0/255 alpha:1];
+    l2.font = [UIFont systemFontOfSize:14];
+    
+    UILabel *l3 = [[UILabel alloc] initWithFrame:CGRectMake(10, 44, 300, 20)];
+    l3.textColor = [UIColor colorWithRed:128.0/255 green:128.0/255 blue:128.0/255 alpha:1];
+    l3.font = [UIFont systemFontOfSize:14];
+    
+    switch (indexPath.row) {
+        case 0:
+            l1.text = @"国际申请费";
+            if(segID.selectedSegmentIndex == 0)
+            {
+                l2.text = @"1130瑞士法郎";
+                l3.text = @"（如按汇率7.95计算，相当于8984元人民币）";
+            }
+            else
+            {
+                l2.text = @"113瑞士法郎";
+                l3.text = @"（如按汇率7.95计算，相当于898元人民币）";
+            }
+            
+            [cell addSubview:l1];
+            [cell addSubview:l2];
+            [cell addSubview:l3];
+            break;
+        case 1:
+            l2 = [[UILabel alloc] initWithFrame:CGRectMake(10, 44, 200, 20)];
+            l2.textColor = [UIColor colorWithRed:188.0/255 green:0 blue:45.0/255 alpha:1];
+            l2.font = [UIFont systemFontOfSize:14];
+            l3 = [[UILabel alloc] initWithFrame:CGRectMake(10, 22, 200, 20)];
+            l3.textColor = [UIColor colorWithRed:128.0/255 green:128.0/255 blue:128.0/255 alpha:1];
+            l3.font = [UIFont systemFontOfSize:14];
+            
+            l1.text = @"超页费";
+            l2.text = @"15瑞士法郎";
+            l3.text = @"请求书+申请文件+委托书超30页，自31页起每页";
+            
+            [cell addSubview:l1];
+            [cell addSubview:l2];
+            [cell addSubview:l3];
+            break;
+        case 2:
+            l1.text = @"传送费";
+            l2.text = @"500元人民币";
+            
+            [cell addSubview:l1];
+            [cell addSubview:l2];
+            break;
+            
+        case 3:
+            l1.text = @"检索费";
+            l2.text = @"2100元人民币";
+            
+            [cell addSubview:l1];
+            [cell addSubview:l2];
+            break;
+        case 4:
+            l1.text = @"优先权文件传送费";
+            l2.text = @"150元人民币";
+            
+            [cell addSubview:l1];
+            [cell addSubview:l2];
+            break;
+        case 5:
+            l1.text = @"初步审查费";
+            l2.text = @"1500元人民币";
+            
+            l3 = [[UILabel alloc] initWithFrame:CGRectMake(100, 0, 200, 20)];
+            l3.textColor = [UIColor colorWithRed:128.0/255 green:128.0/255 blue:128.0/255 alpha:1];
+            l3.font = [UIFont systemFontOfSize:14];
+            l3.text = @"（初审为可选择程序）";
+            
+            [cell addSubview:l1];
+            [cell addSubview:l2];
+            [cell addSubview:l3];
+            break;
+        case 6:
+            l1.text = @"手续费";
+            if(segID.selectedSegmentIndex == 0)
+                l2.text = @"200瑞士法郎";
+            else
+                l2.text = @"20瑞士法郎";
+            
+            [cell addSubview:l1];
+            [cell addSubview:l2];
+            break;
+        default:
+            break;
+    }
+    return cell;
+}
+- (IBAction)SegmentText:(id)sender {
+    [resultTableView reloadData];
+}
+@end
