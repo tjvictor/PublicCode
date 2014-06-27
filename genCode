@@ -1,0 +1,762 @@
+UILabel *l1 = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 200, 20)];
+l1.textColor = [UIColor colorWithRed:51.0/255 green:51.0/255 blue:51.0/255 alpha:1];
+l1.font = [UIFont systemFontOfSize:16];
+
+UILabel *l2 = [[UILabel alloc] initWithFrame:CGRectMake(10, 22, 200, 20)];
+l2.textColor = [UIColor colorWithRed:188.0/255 green:0 blue:45.0/255 alpha:1];
+l2.font = [UIFont systemFontOfSize:14];;
+
+UILabel *l3 = [[UILabel alloc] initWithFrame:CGRectMake(10, 44, 300, 20)];
+l3.textColor = [UIColor colorWithRed:128.0/255 green:128.0/255 blue:128.0/255 alpha:1];
+l3.font = [UIFont systemFontOfSize:14];;
+
+switch (indexPath.row) {
+case 0:
+l1.text = @"Antigua and Barbuda";
+l2.text = @"AG";
+l3.text = @"安提瓜和巴布达";
+
+case 1:
+l1.text = @"Albania";
+l2.text = @"AL";
+l3.text = @"阿尔巴尼亚";
+
+case 2:
+l1.text = @"Armenia";
+l2.text = @"AM";
+l3.text = @"亚美尼亚共和国";
+
+case 3:
+l1.text = @"Angola";
+l2.text = @"AO";
+l3.text = @"安哥拉";
+
+case 4:
+l1.text = @"Austria";
+l2.text = @"AT";
+l3.text = @"奥地利共和国";
+
+case 5:
+l1.text = @"Australia";
+l2.text = @"AU";
+l3.text = @"澳大利亚";
+
+case 6:
+l1.text = @"Azerbaijan";
+l2.text = @"AZ";
+l3.text = @"阿塞拜疆共和国";
+
+case 7:
+l1.text = @"Algeria";
+l2.text = @"DZ";
+l3.text = @"阿尔及利亚民主人民共和国";
+
+case 8:
+l1.text = @"Bosnia and Herzegovina";
+l2.text = @"BA";
+l3.text = @"波斯尼亚和黑塞哥维那";
+
+case 9:
+l1.text = @"Barbados";
+l2.text = @"BB";
+l3.text = @"巴巴多斯";
+
+case 10:
+l1.text = @"Belgium";
+l2.text = @"BE";
+l3.text = @"比利时";
+
+case 11:
+l1.text = @"Burkina Faso";
+l2.text = @"BF";
+l3.text = @"布基纳法索";
+
+case 12:
+l1.text = @"Bulgaria";
+l2.text = @"BG";
+l3.text = @"保加利亚共和国";
+
+case 13:
+l1.text = @"Bahrain";
+l2.text = @"BH";
+l3.text = @"巴林";
+
+case 14:
+l1.text = @"Benin";
+l2.text = @"BJ";
+l3.text = @"贝宁共和国";
+
+case 15:
+l1.text = @"Brunei Darussalam";
+l2.text = @"BN";
+l3.text = @"文莱达鲁萨兰国";
+
+case 16:
+l1.text = @"Brazil";
+l2.text = @"BR";
+l3.text = @"巴西";
+
+case 17:
+l1.text = @"Botswana";
+l2.text = @"BW";
+l3.text = @"博茨瓦纳";
+
+case 18:
+l1.text = @"Belarus";
+l2.text = @"BY";
+l3.text = @"白俄罗斯";
+
+case 19:
+l1.text = @"Belize";
+l2.text = @"BZ";
+l3.text = @"伯利兹";
+
+case 20:
+l1.text = @"Canada";
+l2.text = @"CA";
+l3.text = @"加拿大";
+
+case 21:
+l1.text = @"Central African Republic";
+l2.text = @"CF";
+l3.text = @"中非共和国";
+
+case 22:
+l1.text = @"Congo";
+l2.text = @"CG";
+l3.text = @"刚果";
+
+case 23:
+l1.text = @"Cote d’Ivoire";
+l2.text = @"CI";
+l3.text = @"科特迪瓦";
+
+case 24:
+l1.text = @"Chile";
+l2.text = @"CL";
+l3.text = @"智利";
+
+case 25:
+l1.text = @"Cameroon";
+l2.text = @"CM";
+l3.text = @"喀麦隆";
+
+case 26:
+l1.text = @"China";
+l2.text = @"CN";
+l3.text = @"中国";
+
+case 27:
+l1.text = @"Colombia";
+l2.text = @"CO";
+l3.text = @"哥伦比亚";
+
+case 28:
+l1.text = @"Costa Rica";
+l2.text = @"CR";
+l3.text = @"哥斯达黎加共和国";
+
+case 29:
+l1.text = @"Cuba";
+l2.text = @"CU";
+l3.text = @"古巴";
+
+case 30:
+l1.text = @"Cyprus";
+l2.text = @"CY";
+l3.text = @"塞浦路斯";
+
+case 31:
+l1.text = @"Czech Republic";
+l2.text = @"CZ";
+l3.text = @"捷克共和国";
+
+case 32:
+l1.text = @"Croatia";
+l2.text = @"HR";
+l3.text = @"克罗地亚共和国";
+
+case 33:
+l1.text = @"Comoros";
+l2.text = @"KM";
+l3.text = @"科摩罗伊斯兰联邦共和国";
+
+case 34:
+l1.text = @"Chad";
+l2.text = @"TD";
+l3.text = @"乍得共和国";
+
+case 35:
+l1.text = @"Denmark";
+l2.text = @"DK";
+l3.text = @"丹麦王国";
+
+case 36:
+l1.text = @"Dominica";
+l2.text = @"DM";
+l3.text = @"多米尼克";
+
+case 37:
+l1.text = @"Dominican Republic";
+l2.text = @"DO";
+l3.text = @"多米尼加共和国";
+
+case 38:
+l1.text = @"Democratic People’s Republic of Korea";
+l2.text = @"KP";
+l3.text = @"朝鲜民主主义人民共和国";
+
+case 39:
+l1.text = @"Ecuador";
+l2.text = @"EC";
+l3.text = @"厄瓜多尔共和国";
+
+case 40:
+l1.text = @"Estonia";
+l2.text = @"EE";
+l3.text = @"爱沙尼亚共和国";
+
+case 41:
+l1.text = @"Egypt";
+l2.text = @"EG";
+l3.text = @"埃及";
+
+case 42:
+l1.text = @"Equatorial Guinea";
+l2.text = @"GQ";
+l3.text = @"赤道几内亚";
+
+case 43:
+l1.text = @"El Salvador";
+l2.text = @"SV";
+l3.text = @"萨尔瓦多";
+
+case 44:
+l1.text = @"Finland";
+l2.text = @"FI";
+l3.text = @"芬兰";
+
+case 45:
+l1.text = @"France";
+l2.text = @"FR";
+l3.text = @"法国";
+
+case 46:
+l1.text = @"Gabon";
+l2.text = @"GA";
+l3.text = @"加蓬共和国";
+
+case 47:
+l1.text = @"Grenada";
+l2.text = @"GD";
+l3.text = @"格林纳达";
+
+case 48:
+l1.text = @"Georgia";
+l2.text = @"GE";
+l3.text = @"佐治亚州";
+
+case 49:
+l1.text = @"Ghana";
+l2.text = @"GH";
+l3.text = @"加纳";
+
+case 50:
+l1.text = @"Gambia";
+l2.text = @"GM";
+l3.text = @"冈比亚";
+
+case 51:
+l1.text = @"Guinea";
+l2.text = @"GN";
+l3.text = @"巴布亚新几内亚独立国";
+
+case 52:
+l1.text = @"Greece";
+l2.text = @"GR";
+l3.text = @"希腊";
+
+case 53:
+l1.text = @"Guatemala";
+l2.text = @"GT";
+l3.text = @"危地马拉共和国";
+
+case 54:
+l1.text = @"Guinea-Bissau";
+l2.text = @"GW";
+l3.text = @"几内亚比索";
+
+case 55:
+l1.text = @"Germany";
+l2.text = @"DE";
+l3.text = @"德国";
+
+case 56:
+l1.text = @"Honduras";
+l2.text = @"HN";
+l3.text = @"洪都拉斯共和国";
+
+case 57:
+l1.text = @"Hungary";
+l2.text = @"HU";
+l3.text = @"匈牙利";
+
+case 58:
+l1.text = @"Indonesia";
+l2.text = @"ID";
+l3.text = @"印度尼西亚共和国";
+
+case 59:
+l1.text = @"Ireland";
+l2.text = @"IE";
+l3.text = @"爱尔兰共和或";
+
+case 60:
+l1.text = @"Israel";
+l2.text = @"IL";
+l3.text = @"以色列";
+
+case 61:
+l1.text = @"India";
+l2.text = @"IN";
+l3.text = @"印度共和国";
+
+case 62:
+l1.text = @"Iran (Islamic Republic of)";
+l2.text = @"IR";
+l3.text = @"伊朗伊斯兰共和国";
+
+case 63:
+l1.text = @"Iceland";
+l2.text = @"IS";
+l3.text = @"冰岛";
+
+case 64:
+l1.text = @"Italy";
+l2.text = @"IT";
+l3.text = @"意大利";
+
+case 65:
+l1.text = @"Japan";
+l2.text = @"JP";
+l3.text = @"日本";
+
+case 66:
+l1.text = @"Kenya";
+l2.text = @"KE";
+l3.text = @"肯尼亚";
+
+case 67:
+l1.text = @"Kyrgyzstan";
+l2.text = @"KG";
+l3.text = @"吉尔吉斯斯坦";
+
+case 68:
+l1.text = @"Kazakhstan";
+l2.text = @"KZ";
+l3.text = @"哈萨克斯坦共和国";
+
+case 69:
+l1.text = @"Lao People’s Democratic Republic";
+l2.text = @"LA";
+l3.text = @"老挝人民民主共和国";
+
+case 70:
+l1.text = @"Liechtenstein";
+l2.text = @"LI";
+l3.text = @"列支敦士登公国";
+
+case 71:
+l1.text = @"Liberia";
+l2.text = @"LR";
+l3.text = @"利比里亚共和国";
+
+case 72:
+l1.text = @"Lesotho";
+l2.text = @"LS";
+l3.text = @"莱索托王国";
+
+case 73:
+l1.text = @"Lithuania";
+l2.text = @"LT";
+l3.text = @"立陶宛共和国";
+
+case 74:
+l1.text = @"Luxembourg";
+l2.text = @"LU";
+l3.text = @"卢森堡";
+
+case 75:
+l1.text = @"Latvia";
+l2.text = @"LV";
+l3.text = @"拉脱维亚共和国";
+
+case 76:
+l1.text = @"Libya";
+l2.text = @"LY";
+l3.text = @"利比亚国";
+
+case 77:
+l1.text = @"Morocco";
+l2.text = @"MA";
+l3.text = @"摩洛哥";
+
+case 78:
+l1.text = @"Monaco";
+l2.text = @"MC";
+l3.text = @"摩纳哥亲王国";
+
+case 79:
+l1.text = @"Montenegro";
+l2.text = @"ME";
+l3.text = @"黑山共和国";
+
+case 80:
+l1.text = @"Madagascar";
+l2.text = @"MG";
+l3.text = @"马达加斯加";
+
+case 81:
+l1.text = @"Mali";
+l2.text = @"ML";
+l3.text = @"马里共和国";
+
+case 82:
+l1.text = @"Mongolia";
+l2.text = @"MN";
+l3.text = @"外蒙古";
+
+case 83:
+l1.text = @"Mauritania";
+l2.text = @"MR";
+l3.text = @"毛里塔尼亚";
+
+case 84:
+l1.text = @"Malta";
+l2.text = @"MT";
+l3.text = @"马耳他";
+
+case 85:
+l1.text = @"Malawi";
+l2.text = @"MW";
+l3.text = @"马拉维共和国";
+
+case 86:
+l1.text = @"Mexico";
+l2.text = @"MX";
+l3.text = @"墨西哥";
+
+case 87:
+l1.text = @"Malaysia";
+l2.text = @"MY";
+l3.text = @"马来西亚";
+
+case 88:
+l1.text = @"Mozambique";
+l2.text = @"MZ";
+l3.text = @"莫桑比克共和国";
+
+case 89:
+l1.text = @"Namibia";
+l2.text = @"NA";
+l3.text = @"纳米比亚共和国";
+
+case 90:
+l1.text = @"Niger";
+l2.text = @"NE";
+l3.text = @"尼日尔共和国";
+
+case 91:
+l1.text = @"Nigeria";
+l2.text = @"NG";
+l3.text = @"尼日利亚联邦共和国";
+
+case 92:
+l1.text = @"Nicaragua";
+l2.text = @"NI";
+l3.text = @"尼加拉瓜";
+
+case 93:
+l1.text = @"Netherlands";
+l2.text = @"NL";
+l3.text = @"荷兰";
+
+case 94:
+l1.text = @"Norway";
+l2.text = @"NO";
+l3.text = @"挪威";
+
+case 95:
+l1.text = @"New Zealand";
+l2.text = @"NZ";
+l3.text = @"新西兰";
+
+case 96:
+l1.text = @"Oman";
+l2.text = @"OM";
+l3.text = @"阿曼苏丹国";
+
+case 97:
+l1.text = @"Panama";
+l2.text = @"PA";
+l3.text = @"巴拿马共和国";
+
+case 98:
+l1.text = @"Peru";
+l2.text = @"PE";
+l3.text = @"秘鲁";
+
+case 99:
+l1.text = @"Papua New Guinea";
+l2.text = @"PG";
+l3.text = @"巴布亚新几内亚";
+
+case 100:
+l1.text = @"Philippines";
+l2.text = @"PH";
+l3.text = @"菲律宾共和国";
+
+case 101:
+l1.text = @"Poland";
+l2.text = @"PL";
+l3.text = @"波兰";
+
+case 102:
+l1.text = @"Portugal";
+l2.text = @"PT";
+l3.text = @"葡萄牙";
+
+case 103:
+l1.text = @"Qatar";
+l2.text = @"QA";
+l3.text = @"卡塔尔";
+
+case 104:
+l1.text = @"Republic of Korea";
+l2.text = @"KR";
+l3.text = @"韩国";
+
+case 105:
+l1.text = @"Republic of Moldova";
+l2.text = @"MD";
+l3.text = @"摩尔多瓦共和国";
+
+case 106:
+l1.text = @"Romania";
+l2.text = @"RO";
+l3.text = @"罗马尼亚";
+
+case 107:
+l1.text = @"Russian Federation";
+l2.text = @"RU";
+l3.text = @"俄罗斯联邦";
+
+case 108:
+l1.text = @"Rwanda";
+l2.text = @"RW";
+l3.text = @"卢旺达";
+
+case 109:
+l1.text = @"Switzerland";
+l2.text = @"CH";
+l3.text = @"瑞士联邦";
+
+case 110:
+l1.text = @"Spain";
+l2.text = @"ES";
+l3.text = @"西班牙";
+
+case 111:
+l1.text = @"Saint Kitts and Nevis";
+l2.text = @"KN";
+l3.text = @"圣基茨和尼维斯";
+
+case 112:
+l1.text = @"Saint Lucia";
+l2.text = @"LC";
+l3.text = @"圣卢西亚";
+
+case 113:
+l1.text = @"Sri Lanka";
+l2.text = @"LK";
+l3.text = @"斯里兰卡";
+
+case 114:
+l1.text = @"Serbia";
+l2.text = @"RS";
+l3.text = @"塞尔维亚共和国";
+
+case 115:
+l1.text = @"Saudi Arabia";
+l2.text = @"SA";
+l3.text = @"沙特阿拉伯";
+
+case 116:
+l1.text = @"Seychelles";
+l2.text = @"SC";
+l3.text = @"塞舌尔共和国";
+
+case 117:
+l1.text = @"Sudan";
+l2.text = @"SD";
+l3.text = @"苏丹";
+
+case 118:
+l1.text = @"Sweden";
+l2.text = @"SE";
+l3.text = @"瑞典王国";
+
+case 119:
+l1.text = @"Singapore";
+l2.text = @"SG";
+l3.text = @"新加坡";
+
+case 120:
+l1.text = @"Slovenia";
+l2.text = @"SI";
+l3.text = @"斯洛文尼亚";
+
+case 121:
+l1.text = @"Slovakia";
+l2.text = @"SK";
+l3.text = @"斯洛伐克";
+
+case 122:
+l1.text = @"Sierra Leone";
+l2.text = @"SL";
+l3.text = @"塞拉利昂共和国";
+
+case 123:
+l1.text = @"San Marino";
+l2.text = @"SM";
+l3.text = @"圣马力诺共和国";
+
+case 124:
+l1.text = @"Senegal";
+l2.text = @"SN";
+l3.text = @"塞内加尔";
+
+case 125:
+l1.text = @"Sao Tome and Principe";
+l2.text = @"ST";
+l3.text = @"圣多美和普林西比民主共和国";
+
+case 126:
+l1.text = @"Syrian Arab Republic";
+l2.text = @"SY";
+l3.text = @"阿拉伯叙利亚共和国";
+
+case 127:
+l1.text = @"Swaziland";
+l2.text = @"SZ";
+l3.text = @"斯威士兰";
+
+case 128:
+l1.text = @"Saint Vincent and the Grenadines";
+l2.text = @"VC";
+l3.text = @"圣文森特和格林纳丁斯";
+
+case 129:
+l1.text = @"South Africa";
+l2.text = @"ZA";
+l3.text = @"南非";
+
+case 130:
+l1.text = @"The former Yugoslav Republic of Macedonia";
+l2.text = @"MK";
+l3.text = @"前南斯拉夫的马其顿共和国";
+
+case 131:
+l1.text = @"Togo";
+l2.text = @"TG";
+l3.text = @"多哥共和国";
+
+case 132:
+l1.text = @"Thailand";
+l2.text = @"TH";
+l3.text = @"泰国 ";
+
+case 133:
+l1.text = @"Tajikistan";
+l2.text = @"TJ";
+l3.text = @"塔吉克斯坦共和国";
+
+case 134:
+l1.text = @"Turkmenistan";
+l2.text = @"TM";
+l3.text = @"土库曼斯坦";
+
+case 135:
+l1.text = @"Tunisia";
+l2.text = @"TN";
+l3.text = @"突尼斯";
+
+case 136:
+l1.text = @"Turkey";
+l2.text = @"TR";
+l3.text = @"土耳其";
+
+case 137:
+l1.text = @"Trinidad and Tobago";
+l2.text = @"TT";
+l3.text = @"特立尼达和多巴哥共和国";
+
+case 138:
+l1.text = @"United Arab Emirates";
+l2.text = @"AE";
+l3.text = @"阿拉伯联合酋长国";
+
+case 139:
+l1.text = @"United Kingdom";
+l2.text = @"GB";
+l3.text = @"英国";
+
+case 140:
+l1.text = @"United Republic of Tanzania";
+l2.text = @"TZ";
+l3.text = @"坦桑尼亚联合共和国";
+
+case 141:
+l1.text = @"Ukraine";
+l2.text = @"UA";
+l3.text = @"乌克兰";
+
+case 142:
+l1.text = @"Uganda";
+l2.text = @"UG";
+l3.text = @"乌干达共和国";
+
+case 143:
+l1.text = @"United States of America";
+l2.text = @"US";
+l3.text = @"美国";
+
+case 144:
+l1.text = @"Uzbekistan";
+l2.text = @"UZ";
+l3.text = @"乌兹别克斯坦共和国";
+
+case 145:
+l1.text = @"Viet Nam";
+l2.text = @"VN";
+l3.text = @"越南";
+
+case 146:
+l1.text = @"Zambia";
+l2.text = @"ZM";
+l3.text = @"赞比亚共和国";
+
+case 147:
+l1.text = @"Zimbabwe";
+l2.text = @"ZW";
+l3.text = @"津巴布韦共和国";
+
+}
+
+[cell addSubview:l1];
+[cell addSubview:l2];
+[cell addSubview:l3];
+
+ return cell;
+}
+
