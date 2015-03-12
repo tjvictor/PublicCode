@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Testing</title>
+<style type="text/css">
+#loading-mask {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.65;
+	z-index: 20000;
+	background-color: grey;
+	z-index: 20000;
+}
+
+.MenuBackColor, .MenuMourseHoverColor:hover {
+	height: 100%;
+	line-height: 30px;
+	background-color: #FFCC99;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.MenuMourseHoverColor:hover {
+	opacity: 0.65;
+}
+</style>
+<script type="text/javascript" src="../JS/jquery-1.11.2.js"></script>
+<script type="text/javascript">
+	function showHide() {
+		$('#loading-mask').fadeToggle("slow");
+	}
+	function menuRedirect(index, obj) {
+		$("div.MenuBackColor").removeClass("MenuBackColor");
+		$(obj).addClass("MenuBackColor");
+	}
+</script>
+</head>
+<body>
+	<!-- Global DIV Start -->
+	<div id='loading-mask' style="display: none;"></div>
+	<div
+		style="position: absolute; left: 0; top: 0; opacity: 0.40; width: 100%; height: 100%; background-image: url(../res/backImg1.jpg); background-size: cover; background-color: grey;">
+	</div>
+	<div id='popup-div' style="display: none;"></div>
+	<!-- Global DIV End -->
+
+	<!-- Menu Block Start -->
+	<div
+		style="left: 0; width: 100%; height: 30px; background-color: #0080C0; opacity: 0.70;">
+		<div style="position: absolute; left: 10%; width: 80%; height: 30px;">
+			<table
+				style="text-align: center; width: 100%; vertical-align: middle; height: 100%; border-collapse: collapse;">
+				<tr>
+					<td style="padding: 0;"><div
+							class="MenuBackColor MenuMourseHoverColor"
+							onclick="menuRedirect(1, this)">MENU1</div></td>
+					<td style="padding: 0;"><div class="MenuMourseHoverColor"
+							onclick="menuRedirect(2, this)">MENU2</div></td>
+					<td style="padding: 0;"><div class="MenuMourseHoverColor"
+							onclick="menuRedirect(3, this)">MENU3</div></td>
+					<td style="padding: 0;"><div class="MenuMourseHoverColor"
+							onclick="menuRedirect(4, this)">MENU4</div></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!-- Menu Block End -->
+
+
+	<div
+		style="position: absolute; left: 10%; width: 80%; height: 100%; margin-top: 5px;">
+		<div style="text-decoration: underline; width: 100%;">goodline</div>
+	</div>
+</body>
+</html>
