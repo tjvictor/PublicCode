@@ -13,7 +13,6 @@
 	opacity: 0.65;
 	z-index: 20000;
 	background-color: grey;
-	z-index: 20000;
 }
 
 .MenuBackColor, .MenuMourseHoverColor:hover {
@@ -40,6 +39,18 @@
 		$("div.MenuBackColor").removeClass("MenuBackColor");
 		$(obj).addClass("MenuBackColor");
 	}
+	function newsOpen(newsId) {
+		showHide();
+		$('#popup-div').css("width", "60%");
+		$('#popup-div').css("height", "50%");
+		$('#popup-div').css("left", "20%");
+		$('#popup-div').css("top", "25%");
+		$('#popup-div').toggle();
+	}
+	function popupClosed() {
+		$('#popup-div').toggle();
+		showHide();
+	}
 </script>
 </head>
 <body>
@@ -48,13 +59,26 @@
 	<div
 		style="position: absolute; left: 0; top: 0; opacity: 0.40; width: 100%; height: 100%; background-image: url(../res/backImg1.jpg); background-size: cover; background-color: grey;">
 	</div>
-	<div id='popup-div' style="display: none;"></div>
+
+	<div id='popup-div'
+		style="position: absolute; display: none; width: 400px; height: 400px; background-color: white; z-index: 30000;">
+		<div style="background-color: #136C9E; height: 16px;">
+			<div style="float: left;">Title</div>
+			<div style="float: right;" onclick="popupClosed()">
+				<img alt="exit" src="../res/close.png" />
+			</div>
+		</div>
+		<div id="progress-mask" style="width: 100%; height: 100%; margin-top:20px;text-align:center;">
+			<img alt="loading" src="../res/loading.gif" />loading ...
+		</div>
+
+	</div>
 	<!-- Global DIV End -->
 
 	<!-- Menu Block Start -->
 	<div
-		style="left: 0; width: 100%; height: 30px; background-color: #0080C0; opacity: 0.70;">
-		<div style="position: absolute; left: 10%; width: 80%; height: 30px;">
+		style="width: 100%; height: 30px; background-color: #0080C0; opacity: 0.70;">
+		<div style="position: relative; left: 10%; width: 80%; height: 30px;">
 			<table
 				style="text-align: center; width: 100%; vertical-align: middle; height: 100%; border-collapse: collapse;">
 				<tr>
@@ -73,10 +97,50 @@
 	</div>
 	<!-- Menu Block End -->
 
-
+	<!-- News Block Start -->
 	<div
-		style="position: absolute; left: 10%; width: 80%; height: 100%; margin-top: 5px;">
-		<div style="text-decoration: underline; width: 100%;">goodline</div>
+		style="position: relative; left: 10%; width: 80%; height: 280px; margin-top: 5px;">
+		<div
+			style="width: 100%; border-bottom: 1px solid grey; margin-bottom: 10px;">
+			goodline</div>
+		<div id="news1" style="cursor: pointer;" onclick="newsOpen(1)">data
+			1</div>
+		<div id="news2" style="cursor: pointer;" onclick="newsOpen(2)">data
+			2</div>
+		<div id="news3" style="cursor: pointer;" onclick="newsOpen(3)">data
+			3</div>
+		<div id="news4" style="cursor: pointer;" onclick="newsOpen(4)">data
+			4</div>
+		<div id="news5" style="cursor: pointer;" onclick="newsOpen(5)">data
+			5</div>
+		<div id="news6" style="cursor: pointer;" onclick="newsOpen(6)">data
+			6</div>
+		<div id="news7" style="cursor: pointer;" onclick="newsOpen(7)">data
+			7</div>
+		<div id="news8" style="cursor: pointer;" onclick="newsOpen(8)">data
+			8</div>
+		<div id="news9" style="cursor: pointer;" onclick="newsOpen(9)">data
+			9</div>
+		<div id="news10" style="cursor: pointer;" onclick="newsOpen(10)">data
+			10</div>
+		<div id="news11" style="cursor: pointer;" onclick="newsOpen(11)">data
+			11</div>
 	</div>
+	<!-- News Block End -->
+
+	<!-- Presentation Block Start -->
+	<div
+		style="position: relative; left: 10%; width: 80%; margin-top: 5px;">
+		<div style="width: 100%; border-bottom: 1px solid grey;">
+			Presentation</div>
+	</div>
+	<!-- Presentation Block End -->
+
+	<!-- Bottom Block Start -->
+	<div
+		style="position: absolute; left: 0; bottom: 0; width: 100%; height: 30px;">
+		<div style="width: 100%; border-top: 1px solid grey;">Information</div>
+	</div>
+	<!-- Bottom Block End -->
 </body>
 </html>
